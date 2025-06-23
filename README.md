@@ -16,5 +16,5 @@ Tarjeta de presentación personal desarrollada con HTML y CSS puro, cumpliendo c
 2. **Localmente**:
    ```bash
    git clone https://github.com/Brian13b/tarjeta_presentacion.git
-   cd tarjeta-presentacion
+   cd tarjeta_presentacion
    open index.html
