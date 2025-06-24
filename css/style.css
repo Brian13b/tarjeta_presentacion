@@ -132,7 +132,7 @@ body {
     text-align: center;
     color: #f0f0f0;
     font-size: calc(1rem + 1vw);
-    padding: 1.5vh 10vw;
+    padding: 1.5vh 9.5vw;
     transition: all 0.3s ease;
     position: relative;
 }
