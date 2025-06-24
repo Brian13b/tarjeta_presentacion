@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #0a0a0a;
     color: #f0f0f0;
     line-height: 1.7;
@@ -14,35 +14,36 @@ body {
 }
 
 .container {
-    width: 90vw;
-    margin: 0 10vw;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Header */
 .header {
     background-color: #121212;
-    padding: 2vh 0;
+    padding: 15px 0;
     box-shadow: 10px 2px rgba(106, 90, 205, 0.4);
-    position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
     z-index: 1000;
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 32px;
     color: #6a5acd;
 }
 
 /* Contenido Principal */
 .main-content {
-    padding: 15vh 5vw 0;
-    width: 100vw;
+    padding: 35px 20px 0;
+    width: 100%;
+    height: 600px;
 }
 
 .tarjeta {
-    width: 80vw;
-    margin: 0 5vw 10vh;
+    width: 1200px;
+    margin: 0 auto 30px;
     background: linear-gradient(145deg, #1a1a1a, #222222);
     border-radius: 20px;
     overflow: hidden;
@@ -57,7 +58,7 @@ body {
 .tarjeta-imagen {
     background: linear-gradient(135deg, #6a5acd, #9370db);
     text-align: center;
-    padding: 5vh 3vw;
+    padding: 25px 20px;
     vertical-align: middle;
     transition: all 0.5s ease;
 }
@@ -67,12 +68,8 @@ body {
 }
 
 .foto-perfil {
-    width: 20vw;
-    height: 20vw;
-    max-width: 250px;
-    max-height: 250px;
-    min-width: 150px;
-    min-height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 5px solid #1a1a1a;
     object-fit: cover;
@@ -87,15 +84,15 @@ body {
 }
 
 .tarjeta-contenido {
-    padding: 5vh 4vw;
+    padding: 25px 20px;
     vertical-align: middle;
 }
 
 .tarjeta-contenido h2 {
-    font-weight: 600;
-    font-size: calc(1.5rem + 1vw);
+    font-weight: 800;
+    font-size: 32px;
     color: #9370db;
-    margin-bottom: 2vh;
+    margin-bottom: 15px;
     transition: color 0.3s;
 }
 
@@ -105,9 +102,9 @@ body {
 
 .tarjeta-contenido h3 {
     color: #48d1cc;
-    font-weight: 400;
-    font-size: calc(1rem + 0.5vw);
-    margin-bottom: 2vh;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 15px;
     transition: color 0.3s;
 }
 
@@ -116,23 +113,24 @@ body {
 }
 
 .descripcion {
-    margin-bottom: 2vh;
-    font-weight: 300;
-    font-size: calc(0.9rem + 0.3vw);
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 20px;
     color: #d3d3d3;
     line-height: 1.8;
 }
 
 .tarjeta-contenido .redes-sociales {
-    width: 65vw;
+    width: 600px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .social-icon {
     text-align: center;
     color: #f0f0f0;
-    font-size: calc(1rem + 1vw);
-    padding: 1.5vh 9.5vw;
+    font-size: 32px;
+    padding: 10px 30px;
     transition: all 0.3s ease;
     position: relative;
 }
@@ -144,14 +142,14 @@ body {
 .social-icon::after {
     content: attr(title);
     position: absolute;
-    bottom: -1.5vh;
+    bottom: -25px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #6a5acd;
     color: white;
-    padding: 0.5vh 1vw;
+    padding: 5px 10px;
     border-radius: 5px;
-    font-size: 0.8rem;
+    font-size: 14px;
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -162,37 +160,61 @@ body {
 
 /* Footer */
 .footer {
-    font-size: 1.2rem;
+    font-size: 20px;
     background-color: #121212;
     color: #6a5acd;
     position: fixed;
     bottom: 0;
-    width: 100vw;
-    padding: 2vh 0;
+    width: 100%;
+    padding: 15px 0;
 }
+
 .footer p {
-    width: 80vw;
+    width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
     .logo {
-        width: 100vw;
-        font-size: 1.2rem;
+        font-size: 20px;
+    }
+
+    .main-content {
+        padding-top: 80px;
     }
 
     .tarjeta {
-        width: 80vw;
-        margin: 0 5vw 10vh;
+        width: 90%;
+        margin: 0 auto 20px;
     }
 
     .foto-perfil {
-        width: 30vw;
-        height: 30vw;
+        width: 150px;
+        height: 150px;
+    }
+
+    .tarjeta-contenido .redes-sociales {
+        width: 100%;
+    }
+
+    .social-icon {
+        padding: 10px 15px;
+        font-size: 20px;
     }
 
     .footer {
-        font-size: 1rem;
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .footer p {
+        width: 90%;
     }
 }
