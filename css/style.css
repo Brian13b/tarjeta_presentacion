@@ -122,8 +122,9 @@ body {
     line-height: 1.8;
 }
 
-.redes-sociales {
-    width: 100%;
+.tarjeta-contenido .redes-sociales {
+    width: 65vw;
+    margin: 0 auto;
 }
 
 .social-icon {
@@ -162,12 +163,15 @@ body {
 .footer {
     font-size: 1.2rem;
     background-color: #121212;
-    padding: 2vh 0;
-    text-align: center;
     color: #6a5acd;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
+    padding: 2vh 0;
+}
+.footer p {
+    width: 80vw;
+    text-align: center;
 }
 
 /* Responsive */
